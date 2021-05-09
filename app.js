@@ -1,5 +1,3 @@
-document.querySelector('body').userScalable = 'no';
-
 let min = 1,
     max = 10,
     winningNum = Math.floor(Math.random() * (max - min + 1) + min),
