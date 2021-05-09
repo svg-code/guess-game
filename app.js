@@ -1,9 +1,10 @@
 let min = 1,
     max = 10,
     winningNum = Math.floor(Math.random() * (max - min + 1) + min),
-    guessesLeft = 3;
+    guessesLeft = 3,
+    answer = document.querySelector('.answer'),
+    relative = document.querySelector('.relative');
 
-    console.log(winningNum);
 
 const game = document.querySelector('#game'),
       minNum = document.querySelector('.min-num'),
@@ -35,7 +36,15 @@ guessBtn.addEventListener('click', function(e) {
     guessBtn.style.color = 'white';
   } else {
     guessesLeft -= 1;
-    if(guessesLeft === 0){
+    if(guessesLeft === 1){
+      relative.style.position = 'relative';
+      answer.textContent = winningNum;
+      answer.style.color = 'blue';
+      answer.style.fontSize = '8px';
+      answer.style.position = 'absolute';
+      answer.style.top = '2px';
+      answer.style.left = '2px';
+    } else if(guessesLeft === 0){
       guessInput.disabled = true;
       guessInput.style.borderColor = 'red';
       setMessage(`Oops!, Game over, ${winningNum} is the correct number`, 'red');
