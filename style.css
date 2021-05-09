@@ -7,11 +7,11 @@
 html, 
 body {
   font-family: "Lato", "Arial", "sans-serif";
+  height: 100vh;
+  width: 100vw;
 }
 
  body > .content {
-  height: 100vh;
-  width: 100vw;
   background-color: #01020a;
 }
 
@@ -21,13 +21,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(11, 16, 11, 0.563);
-  
   height: 650px;
   width: 800px;
 }
 
 .relative {
-  position: relative;
   height: inherit;
   width: inherit;
   display: flex;

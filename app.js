@@ -1,9 +1,13 @@
+document.querySelector('body').userScalable = 'no';
+
 let min = 1,
     max = 10,
     winningNum = Math.floor(Math.random() * (max - min + 1) + min),
     guessesLeft = 3,
     answer = document.querySelector('.answer'),
     relative = document.querySelector('.relative');
+
+
 
 
 const game = document.querySelector('#game'),
