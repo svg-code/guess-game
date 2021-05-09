@@ -52,5 +52,5 @@ guessBtn.addEventListener('click', function(e) {
 function setMessage(msg, color) {
   message.textContent = msg;
   message.style.color = color;
-  message.style.fontSize = '22px';
+  message.style.fontSize = '16px';
 }
