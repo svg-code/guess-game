@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  font-family: "Lato", "Arial", "sans-serif";
+}
+
+ body > .content {
+  height: 100vh;
+  width: 100vw;
+  background-color: #01020a;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(11, 16, 11, 0.563);
+  color: #f4f4f4;
+  height: 650px;
+  width: 800px;
+}
+
+input[type='number']{
+  color: #000;
+  font-weight: bold;
+}
+
+input[type='submit'] {
+  color: #f4f4f4;
+}
+
+
+input[type='submit']:hover,
+input[type='submit']:active {
+  color: #fff;
+}
+
+#game {
+  text-align: center;
+}
+
+
+
+.long-copy {
+  font-size: 22px;
+}
+
+
+.message {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 145%;
+  margin-top: 30px;
+  width: inherit;
+}
