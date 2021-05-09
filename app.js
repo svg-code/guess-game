@@ -44,8 +44,8 @@ guessBtn.addEventListener('click', function(e) {
       answer.style.color = 'blue';
       answer.style.fontSize = '8px';
       answer.style.position = 'absolute';
-      answer.style.top = '2px';
-      answer.style.left = '2px';
+      answer.style.top = '70%';
+      answer.style.left = '60px';
     } else if(guessesLeft === 0){
       guessInput.disabled = true;
       guessInput.style.borderColor = 'red';
